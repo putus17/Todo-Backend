@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                        // Modern JS features
+    "module": "CommonJS",                        // For using ES modules (`import/export`)
+    "outDir": "/dist",                        // Compiled JS output folder
+    "rootDir": "./src",                        // Source files location
+    "strict": true,                            // Enables strict type-checking
+    "esModuleInterop": true,                   // Allows default imports from CJS modules like MongoDB
+            // Required by some decorator-based libraries
+  },
+        // Exclude output and dependencies
+}
