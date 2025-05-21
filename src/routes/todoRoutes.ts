@@ -4,11 +4,12 @@ import {authenticate} from '../middleware/authmiddleware'
 
 const router = Router();
 
-router.post('/', authenticate, create);
 
 router.get('/',authenticate,  getAll );
 
 router.get('/:id', authenticate, getById );
+
+router.post('/', authenticate, create);
 
 router.put('/:id', authenticate ,update );
 
